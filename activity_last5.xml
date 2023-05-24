@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Last5">
+
+    <TextView
+        android:id="@+id/titlel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/darkblue"
+        android:text="Exemplu while"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="367dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp"
+        android:text="In exemplul precedent, while inlocuia o bucla for de la 1 la 10. Sa vedem un caz in care putem folosi doar bucla while: \n \n   Suma cifrelor unui numar citit de la tastatura"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlel5" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="372dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="22dp"
+        android:background="@color/white"
+        android:text="      Cum extragem cifrele unui numar? \n Incepem cu cifra unitatilor care este restul impartirii numarului la 10. Ca sa trecem la urmatoarea cifra trebuie sa modificam numarul nostru initial prin ~taierea~ cifrei deja extrase, ceea ce facem prin impartirea numarului la 10. Ne oprim din extragerea cifrelor atunci cand numarul nostru devine 0 ( am ajuns la ultima cifra si catul impartirii la 10 da 0 )."
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="149dp"
+        android:background="#ff0000"
+        android:text="exemplu cod"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="265dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="15dp"
+        android:text="int s, numar, cifra ; \n s = 0 ; \n cin &gt;&gt; numar ; \n while ( numar != 0 ) { \n      cifra = numar % 10 ; \n      s = s + c ; \n      numar = numar / 10 ; \n } \n cout &lt;&lt; s ;"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <Button
+        android:id="@+id/backl5"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    <Button
+        android:id="@+id/nextl5"
+        android:layout_width="137dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="4dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backl5"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+</androidx.constraintlayout.widget.ConstraintLayout>

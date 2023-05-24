@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Last2">
+
+    <TextView
+        android:id="@+id/titlel2"
+        android:layout_width="52dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/darkblue"
+        android:text="For."
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="357dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="22dp"
+        android:text="      Ciclu ( repetare ) cu numar cunoscut de pasi: stim exact de cate ori vrem sa se repete actiunea noastra. \n Acest numar de pasi poarta numele de CONTOR si pentru el trebuie sa stabilim: \n    - o valoare initiala ( de pornire ) \n     - o valoare finala ( de oprire ) \n     - valoarea cu care modific contorul ( pasul ). "
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlel2" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="371dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66"
+        app:srcCompat="@drawable/sintaxafor" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="384dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:text="Aici avem sintaxa unei instructiuni for: plecam cu contorul nostru de la valoarea initiala si pentru a ajunge la valoarea finala, care este mai mare decat cea initiala, mergem din 1 in 1."
+        android:textColor="@color/darkblue"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="377dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:text="      Conditia de modificare a contorului poate fi orice doresti si ai nevoie intr-o problema ( adunare, scadere, inmultire ... ), doar sa ai grija ca din valoarea initiala sa se poatea ajunge la cea finala, altfel vei obtine un &quot;ciclu infinit&quot;, ceea ce nu ne dorim :) \n De exemplu, pentru val_initiala = 10, val_finala = 5 si conditia contor = contor + 1: 10 care e prima valoare va deveni 11,12,13... dar niciodata 5"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <Button
+        android:id="@+id/backl2"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <Button
+        android:id="@+id/nextl2"
+        android:layout_width="142dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="57dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backl2"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+</androidx.constraintlayout.widget.ConstraintLayout>

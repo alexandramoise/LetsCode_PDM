@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations8">
+
+    <TextView
+        android:id="@+id/titleo8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/darkblue"
+        android:text="Operatorii de comparatie"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="103dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/titleo8"
+        app:srcCompat="@drawable/robot2" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="285dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="In C++ avem operatori de comparatie pentru: \n - egalitate \n - diferit \n - mai mic ( si mai mic sau egal ) \n - mai mare ( si mai mare sau egal ) \n Mai jos ai o imagine cu felul in care le scriem pe fiecare:"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleo8" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="406dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59"
+        app:srcCompat="@drawable/comparare" />
+
+    <Button
+        android:id="@+id/backo8"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="43dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <Button
+        android:id="@+id/nexto8"
+        android:layout_width="145dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="43dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backo8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+</androidx.constraintlayout.widget.ConstraintLayout>

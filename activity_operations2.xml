@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations2">
+
+    <TextView
+        android:id="@+id/textViewo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="75dp"
+        android:background="@color/darkblue"
+        android:text="Tipuri de date in C++"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="377dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewo2"
+        app:srcCompat="@drawable/tipuridate" />
+
+    <TextView
+        android:id="@+id/titleo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="46dp"
+        android:background="@color/darkblue"
+        android:text="Valori posibile"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="335dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleo2"
+        app:srcCompat="@drawable/valoritipuri" />
+
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="92dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/backo"
+        android:layout_width="129dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="93dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

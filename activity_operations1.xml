@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations1">
+
+    <TextView
+        android:id="@+id/titleo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/darkblue"
+        android:text="Tipuri de date in C++"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="138dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="129dp"
+        app:layout_constraintStart_toEndOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot2" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="244dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="26dp"
+        android:text="      Dupa cum poate iti amintesti, in lectile anterioare am spus ca vom vorbi despre ~tipuri de date in C++. \n   Aceste tipuri ne vor ajuta sa pastram informatia de care avem nevoie in variabilele noastre."
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleo1" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="353dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:text="      Tipul variabilei e legat de ce fel de valoare vrem sa pastram in ea ( un numar intreg, real, un simbol de pe tastatura, o valoare de adevar etc). \n    Vei vedea in pagina urmatoare tipul folosit pentru fiecare categorie mentionata de mine."
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="114dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="103dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="132dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="100dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+</androidx.constraintlayout.widget.ConstraintLayout>

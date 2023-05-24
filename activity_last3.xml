@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Last3">
+
+    <TextView
+        android:id="@+id/titlel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/darkblue"
+        android:text="Exemplu for"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="217dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="27dp"
+        android:text="Sa vedem cum utilizam instructiunea for intr-un exemplu practic: \n"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlel3" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="137dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="106dp"
+        app:layout_constraintStart_toEndOf="@+id/textView69"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot2" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="374dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="      Avem urmatorea problema: Sa se calculeze suma tuturor numerelor de la 1 la 20.  Cum procedam, de ce variabile avem nevoie? \n - doua variabile: suma si contorul ( contorul va reprezenta fiecare numar din intervalul inchis [1,20] ). In timp ce parcurgem toate numerele, le adunam la variabila suma."
+        android:textColor="@color/darkblue"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="89dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="9dp"
+        android:background="#ff0000"
+        android:text="Rezolvare"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView70" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:background="@color/white"
+        android:text="int s, x ; // s = suma, x = numerele \n for ( x = 1 ; x &lt;= 20 ; x = x+1 ) \n       s = s + x ; \n cout &lt;&lt; s ; "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <Button
+        android:id="@+id/backl3"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <Button
+        android:id="@+id/nextl3"
+        android:layout_width="135dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+</androidx.constraintlayout.widget.ConstraintLayout>

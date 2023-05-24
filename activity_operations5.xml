@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations5">
+
+    <TextView
+        android:id="@+id/titleo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="86dp"
+        android:background="@color/darkblue"
+        android:text="Intrebare scurta"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="382dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Care este rezultatul urmatoarei secvente de cod? \n INDICIU - conteaza ordinea operatiilor."
+        android:textColor="@color/darkblue"
+        android:textSize="17dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:text="cout &lt;&lt; 3 + 15 % 2 ;"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <RadioButton
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="40dp"
+        android:text="2"
+        android:textSize="19dp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <RadioButton
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:text="4"
+        android:textSize="19dp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a1" />
+
+    <RadioButton
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="23dp"
+        android:text="0"
+        android:textSize="19dp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a2" />
+
+    <RadioButton
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="27dp"
+        android:text="nu stiu"
+        android:textSize="19dp"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a3" />
+
+    <Button
+        android:id="@+id/backo5"
+        android:layout_width="112dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="38dp"
+        android:text="Inapoi"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doneo5" />
+
+    <Button
+        android:id="@+id/nexto5"
+        android:layout_width="134dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="100dp"
+        android:text="Urmatorul"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@+id/backo5"
+        app:layout_constraintTop_toBottomOf="@+id/doneo5" />
+
+    <Button
+        android:id="@+id/doneo5"
+        android:layout_width="148dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="21dp"
+        android:text="Am rezolvat!"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a4" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="125dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/titleo5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

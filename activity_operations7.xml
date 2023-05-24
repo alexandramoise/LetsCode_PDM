@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations7">
+
+    <TextView
+        android:id="@+id/titleo7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/darkblue"
+        android:text="Instructiunea if"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="256dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:text="      Imagineaza-ti instructiunea if ca pe o intrebare cu raspuns DA sau NU si o actiune care se intampla pentru fiecare varianta. \n Iata un exemplu:"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleo7" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="123dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot2" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="299dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56"
+        app:srcCompat="@drawable/daca" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="326dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="14dp"
+        android:text="In exemplu avem cele doua ramuri principale: \n - if: ce se intampla cand conditia este adevarata \n - else: ce se intampla cand conditia este falsa"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <Button
+        android:id="@+id/backo7"
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="26dp"
+        android:text="Inapoi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <Button
+        android:id="@+id/nexto7"
+        android:layout_width="114dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="26dp"
+        android:text="Urmatorul"
+        app:layout_constraintStart_toEndOf="@+id/backo7"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff0000"
+        android:text="  REZULTAT: Numar pozitiv!"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+</androidx.constraintlayout.widget.ConstraintLayout>

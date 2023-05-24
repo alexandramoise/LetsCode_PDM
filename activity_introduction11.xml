@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Introduction11">
+
+    <TextView
+        android:id="@+id/title11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="77dp"
+        android:background="@color/darkblue"
+        android:text="Folosire Variabile"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="128dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="126dp"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/robot2" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="248dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="40dp"
+        android:text="      In lectia anterioara am vazut cum declaram variabile, acum le vom oferi variabile prin cele doua metode despre care ti-am spus:"
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/white"
+        android:text="- prin oferirea unei valori folosind = "
+        android:textColor="#008000"
+        android:textSize="16dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="19dp"
+        android:text="int numar ; \n numar = 5 ;"
+        android:textColor="#008000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="235dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="45dp"
+        android:background="@color/white"
+        android:text=" - citind valoarea de la tastatura"
+        android:textColor="#008000"
+        android:textSize="16dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="39dp"
+        android:text="int numar ; \n cin &gt;&gt; numar ;"
+        android:textColor="#008000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="369dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Pentru afisarea valorii din variabila noastra folosim: cout &lt;&lt; numar ;"
+        android:textColor="@color/darkblue"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="364dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:text="OBSERVATIE!! \nIndiferent de cum oferim valoarea variabilei, trebuie sa avem grija sa alegem o valoare corespunzatoare tipului!! "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <Button
+        android:id="@+id/next11"
+        android:layout_width="132dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="57dp"
+        android:text="Urmatorul"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@+id/back11"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/back11"
+        android:layout_width="136dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="57dp"
+        android:text="Inapoi"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+</androidx.constraintlayout.widget.ConstraintLayout>

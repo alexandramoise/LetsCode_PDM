@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Profil">
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="90dp"
+        android:text="Level: "
+        android:textColor="@color/darkblue"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kids"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/kids"
+        android:layout_width="183dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/level"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copii" />
+
+    <ImageView
+        android:id="@+id/level1"
+        android:layout_width="106dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/level2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kids"
+        app:srcCompat="@drawable/level1" />
+
+    <ImageView
+        android:id="@+id/level2"
+        android:layout_width="107dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/level3"
+        app:layout_constraintStart_toEndOf="@+id/level1"
+        app:layout_constraintTop_toBottomOf="@+id/kids"
+        app:srcCompat="@drawable/lacat" />
+
+    <ImageView
+        android:id="@+id/level3"
+        android:layout_width="106dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/level2"
+        app:layout_constraintTop_toBottomOf="@+id/level"
+        app:srcCompat="@drawable/lacat" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="159dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="166dp"
+        android:text="Iesire"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

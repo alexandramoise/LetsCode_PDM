@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Operations6">
+
+    <TextView
+        android:id="@+id/titleo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="62dp"
+        android:background="@color/darkblue"
+        android:text="Variabile bool"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="382dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="      Mai tii minte tipul de date boolean? ( scris bool in C++ ) \n       Am spus ca o variabila bool poate avea una din cele doua valori TRUE / FALSE. \n        Asadar, putem folosi variabilele bool sa verificam daca o comparatie este adevarata sau nu."
+        android:textColor="@color/darkblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleo6" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="379dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/white"
+        android:text="exemplu: \n       bool verific1, verific2 ; \n        verific1 = (15 &lt; 25) ;   \n        verific2 = (1 &gt; 2) ; \n        cout &lt;&lt; &quot;Prima conditie&quot; &lt;&lt; verific1 ;   \n        cout &lt;&lt; &quot;A doua conditie&quot; &lt;&lt; verific2 ; "
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="12dp"
+        android:background="#ff0000"
+        android:text="  REZULTAT: true false"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="373dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Explicatie: prima conditie este una adevarata ( 15 e mai mic decat 25 ) =&gt; verific1 va lua valoarea TRUE \n a doua conditie este una falsa ( 1 e mai mic decat 2, nu mai mare ) =&gt; verific2 va lua valoarea FALSE "
+        android:textColor="@color/darkblue"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <Button
+        android:id="@+id/backo6"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:text="Inapoi"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <Button
+        android:id="@+id/nexto6"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="14dp"
+        android:text="Urmatorul"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/backo6"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+</androidx.constraintlayout.widget.ConstraintLayout>
